@@ -1,9 +1,9 @@
 ﻿import express from 'express'
 import cors from 'cors'
 import { randomUUID } from 'crypto'
-import { resolveAndValidateUrl } from './shared/validation.ts'
-import { performHealthCheck } from './shared/checker.ts'
-import { Website, CheckResult, Incident } from './shared/types.ts'
+import { resolveAndValidateUrl } from '../shared/validation.ts'
+import { performHealthCheck } from '../shared/checker.ts'
+import { Website, CheckResult, Incident } from '../shared/types.ts'
 
 const app = express()
 app.use(cors())
